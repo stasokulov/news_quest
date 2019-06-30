@@ -49,7 +49,6 @@
 }
 
 .container__outer-wrap {
-    box-shadow: 0px 30px 40px rgba(133, 73, 86, 0.210598), 0px 0px 4px rgba(0, 0, 0, 0.0942595);
     font-family: "Roboto", sans-serif;
 }
 
@@ -60,6 +59,7 @@
     height: 1px;
     box-sizing: border-box;
     background-image: url(img/background.svg);
+    box-shadow: 0px 30px 40px rgba(133, 73, 86, 0.210598), 0px 0px 4px rgba(0, 0, 0, 0.0942595);
 }
 
 /* preview */
