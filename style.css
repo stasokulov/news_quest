@@ -148,6 +148,7 @@
     box-shadow: 0px 15px 22px rgba(121, 54, 68, 0.225628);
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 
 .start:hover {
@@ -283,7 +284,7 @@
 .resume__wrap {
     position: relative;
     padding: 46px 0 0 0;
-    width: 380px;
+    max-width: 380px;
 }
 
 .resume {
@@ -295,6 +296,7 @@
 
 .social {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social__btn {
@@ -303,7 +305,7 @@
     justify-content: center;
     height: 50px;
     width: 60px;
-    margin: 0 15px 0 0;
+    margin: 0 15px 15px 0;
     background: #fff;
     box-shadow: 0px 15px 22px rgba(121, 54, 68, 0.225628);
     border-radius: 2px;
@@ -372,18 +374,10 @@
 
 @media (max-width: 1000px) {
 
-    .mobile {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
     /* preview */
 
     .preview {
-        padding: 0 0 0 38px;
+        padding: 0 38px 0 38px;
     }
 
     .preview__text {
@@ -407,7 +401,7 @@
     /*steps*/
 
     .steps__outer-wrap {
-        padding: 0 0 0 40px;
+        padding: 0 40px 0 40px;
     }
 
     .steps {
@@ -416,6 +410,7 @@
 
     .main-content {
         padding: 29px 0 0 0;
+        margin: 0 0 20px 0;
     }
 
     .result__img-1 {
@@ -451,5 +446,12 @@
         width: 477px;
         height: 444px;
         background-image: url(img/result/mobile/editorial_mobile.png);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .img {
+        display: none;
     }
 }
